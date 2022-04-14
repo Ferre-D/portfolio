@@ -1,0 +1,230 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  --primary-color: #eaab19;
+  /* #margin and padding 0; */
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* body min height 100vh */
+nav {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  display: flex !important;
+  margin: 1rem 0;
+  margin-top: 0;
+  padding-top: 1rem;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 1.5em;
+}
+nav ul .active {
+  font-weight: bold;
+}
+nav a {
+  color: black;
+}
+nav a:hover {
+  color: black;
+  text-decoration: none;
+}
+.nav-title {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+/* whatido */
+.whatido {
+  padding-top: 8em;
+  max-height: 100vh;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+.whatido-title {
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  width: fit-content;
+  margin: 0 auto;
+  border-bottom: 2px solid var(--primary-color);
+  font-weight: bold !important;
+}
+
+.whatido-icon {
+  width: 84px;
+  margin-top: 4rem;
+  height: 84px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+.whatido-content-title {
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+.whatido-contact {
+  cursor: pointer;
+  font-weight: 400;
+  color: var(--primary-color) !important;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-family: "Lato", sans-serif;
+  margin: 0 auto;
+}
+.whatido-contact:hover {
+  text-decoration: underline !important;
+}
+.whatido-content-text {
+  font-size: 20px;
+  width: 300px;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-family: "Lato", sans-serif;
+  margin: 0 auto;
+}
+.whatido-li .fa-check {
+  color: var(--primary-color);
+}
+.whatido-li {
+  padding-top: 1.4rem;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-family: "Lato", sans-serif;
+}
+.whatido-keypoint {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+/* home */
+.home {
+  padding-top: 13em;
+  max-height: 100vh;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+.home-title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 900 !important;
+}
+.rotating {
+  color: var(--primary-color);
+}
+
+.home-text {
+  margin: 4em 0;
+  padding-left: 3em;
+  border-left: 3px solid var(--primary-color);
+  font-size: 20px;
+  width: 480px;
+  font-weight: 300;
+  animation: fade-in-left-right 0.5s;
+}
+.home-button {
+  position: relative;
+}
+.contact-me-button {
+  font-size: 0.9em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  margin-top: 2em;
+  padding: 0.75em 2em;
+  transition: bottom 3s linear;
+  transition: right 3s linear;
+  /* animation */
+  animation: fade-in-down-top 0.5s;
+}
+
+.contact-pop-up-button {
+  position: fixed;
+  bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  right: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  border: 0;
+  /* animation */
+  animation: pop-up 0.7s;
+  cursor: pointer;
+}
+.contact-pop-up-button:hover {
+  animation: pulsing 1.2s infinite;
+}
+.contact-pop-up-button i {
+  font-size: 2em;
+}
+@keyframes pop-up {
+  0% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulsing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*  animations */
+
+@keyframes fade-in-down-top {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* fade in left-right */
+@keyframes fade-in-left-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

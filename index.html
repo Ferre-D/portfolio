@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <!-- Lottie files player cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+      src="https://kit.fontawesome.com/15b83cd4a6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- nav with items: Home, What I do, projects -->
+    <nav class="container fixed-top bg-white">
+      <div><p class="m-0 nav-title">Ferre Donné</p></div>
+      <ul>
+        <li class="active">
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#whatido">What I do</a>
+        </li>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container home" id="home">
+      <div class="row m-0">
+        <div class="col-sm-12 col-md-6">
+          <div class="home-title">
+            <p class="m-0">I can help you with</p>
+            <p class="rotating">Web solutions</p>
+          </div>
+          <div class="home-text">
+            <p>
+              Hi I’m Ferre. I’m a software engineer with a passion for helping
+              people with my skills in webdesign, application development, IT
+              consulting and much more...
+            </p>
+          </div>
+          <div class="home-button">
+            <button id="contact-me-button" class="contact-me-button">
+              Contact me
+            </button>
+          </div>
+        </div>
+        <div hidden class="contact-pop-up-button">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <!-- center plz -->
+
+        <div class="col-md-6">
+          <lottie-player
+            src="./assets/home animation.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+    </div>
+    <div class="whatido container" id="whatido">
+      <div class="text-center">
+        <h3 class="whatido-title">What i do</h3>
+      </div>
+      <div class="row mx-0 mt-5">
+        <div class="col-md-4">
+          <div class="whatido-icon mx-auto">
+            <i class="fa-solid fa-pen-ruler"></i>
+          </div>
+          <h3 class="whatido-content-title text-center mt-5">UI/UX</h3>
+          <p class="whatido-content-text text-center mt-3">
+            A good looking website is important to attract users, you need an
+            intuitive website to keep those users.
+          </p>
+          <ul class="whatido-list fa-ul mt-4">
+            <li class="whatido-li">
+              <span class="fa-li"><i class="fa-solid fa-check"></i></span
+              >Increases <span class="whatido-keypoint">user reviews</span>
+            </li>
+            <li class="whatido-li">
+              <span class="fa-li"><i class="fa-solid fa-check"></i></span
+              >Increases <span class="whatido-keypoint">conversion rate</span>
+            </li>
+            <li class="whatido-li">
+              <span class="fa-li"><i class="fa-solid fa-check"></i></span
+              >consolidates <span class="whatido-keypoint">branding</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="whatido-icon mx-auto">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3 class="whatido-content-title text-center mt-5">
+            custom applications
+          </h3>
+          <p class="whatido-content-text text-center mt-3">
+            An application that fits just your needs is hard to find nowadays.
+            Don’t worry I can help you with just what you need.
+          </p>
+          <ul class="whatido-list fa-ul mt-4">
+            <li class="whatido-li">
+              <span class="fa-li"><i class="fa-solid fa-check"></i></span
+              >Increases <span class="whatido-keypoint">work efficiency</span>
+            </li>
+            <li class="whatido-li">
+              <span class="fa-li"><i class="fa-solid fa-check"></i></span>Made
+              <span class="whatido-keypoint">just for you</span>
+            </li>
+            <li class="whatido-li">
+              <span class="fa-li"><i class="fa-solid fa-check"></i></span>scale
+              <span class="whatido-keypoint">your organization</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="whatido-icon mx-auto">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h3 class="whatido-content-title text-center mt-5">IT consulting</h3>
+          <p class="whatido-content-text text-center mt-3">
+            Do you think IT can help your workflow?
+            <a class="whatido-contact">Come talk to me</a> and we’ll figure out
+            a solution that’s up to your standards.
+          </p>
+          <ul class="whatido-list fa-ul mt-4">
+            <li class="whatido-li">
+              <span class="fa-li"><i class="fa-solid fa-check"></i></span
+              >Increases <span class="whatido-keypoint">user reviews</span>
+            </li>
+            <li class="whatido-li">
+              <span class="fa-li"><i class="fa-solid fa-check"></i></span
+              >Increases <span class="whatido-keypoint">conversion rate</span>
+            </li>
+            <li class="whatido-li">
+              <span class="fa-li"><i class="fa-solid fa-check"></i></span>an
+              outside take on
+              <span class="whatido-keypoint">your operations</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
