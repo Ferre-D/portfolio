@@ -15,4 +15,9 @@ $(document).ready(function () {
       $(".contact-pop-up-button").attr("hidden", true);
     }
   });
+  $("nav li a").click((e) => {
+    $("nav li.active").removeClass("active");
+    $(e.target).closest("li").addClass("active")
+  })
+  
 });
