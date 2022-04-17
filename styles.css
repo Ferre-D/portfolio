@@ -15,7 +15,6 @@
 
 /* body min height 100vh */
 nav {
-  
   font-size: 16px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
@@ -35,8 +34,8 @@ nav ul li {
   position: relative;
   margin: 0 1.5em;
 }
-nav ul li::after{
-  content: '';
+nav ul li::after {
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -47,7 +46,7 @@ nav ul li::after{
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-nav ul li:hover::after{
+nav ul li:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -112,8 +111,8 @@ nav a:hover {
   font-family: "Lato", sans-serif;
   margin: 0 auto;
 }
-.whatido-contact::after{
-  content: '';
+.whatido-contact::after {
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -126,7 +125,8 @@ nav a:hover {
 }
 .whatido-contact:hover::after {
   transform: scaleX(1);
-  transform-origin: bottom left;}
+  transform-origin: bottom left;
+}
 .whatido-content-text {
   font-size: 20px;
   width: 300px;
@@ -176,12 +176,31 @@ nav a:hover {
   font-weight: 300;
   animation: fade-in-left-right 0.5s;
 }
+.button-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
 .home-button {
   position: relative;
 }
-.illustration{
+.illustration {
   animation: fade-in-right-left 0.5s;
-
+}
+.floating .contact-me-button {
+  bottom: 30px;
+  left: calc(100% - 80px);
+  width: 65px;
+  height: 65px;
+  padding: 5px;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  transition: all ease-in-out 0.5s;
+  font-size: 1.9rem;
+  color: white;
 }
 .contact-me-button {
   font-size: 0.9em;
@@ -191,65 +210,24 @@ nav a:hover {
   color: white;
   border-radius: 5px;
   border: 0;
+  position: absolute;
+  bottom: 100%;
+  left: 20px;
   margin-top: 2em;
   padding: 0.75em 2em;
-  transition: bottom 3s linear;
-  transition: right 3s linear;
+  transition: all 0.5s ease-in-out;
+
+  position: absolute;
   /* animation */
   animation: fade-in-down-top 0.5s;
 }
-.contact-me-button:hover{
+.contact-me-button:hover {
   transform: scale(1.05);
-  -webkit-box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.24);
-  box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.24);
   transition: all ease-in-out 250ms;
 }
-.contact-pop-up-button {
-  position: fixed;
-  bottom: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  right: 15px;
-  background-color: var(--primary-color);
-  color: white;
-  border-radius: 50%;
-  border: 0;
-  /* animation */
-  animation: pop-up 0.7s;
-  cursor: pointer;
-}
-.contact-pop-up-button:hover {
-  transition: all ease-in-out 250ms;
-  transform: scale(1.2);
-}
-.contact-pop-up-button i {
-  font-size: 2em;
-}
-@keyframes pop-up {
-  0% {
-    transform: scale(1);
-  }
-  80% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes pulsing {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+
 /*  animations */
 
 @keyframes fade-in-top-down {
