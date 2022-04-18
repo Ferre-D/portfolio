@@ -25,12 +25,23 @@ $(document).ready(function () {
       $("#not-floating-content").show();
     }
   };
+  let checkNav = () => {
+    $(".active").removeClass("active");
+    // if ($("#projects").offset().top - 56 < $(window).scrollTop()) {
+    //   $(".active").removeClass("active");
+    //   return $("#projects-nav").addClass("active");
+    // }
+    if ($("#whatido").offset().top - 56 < $(window).scrollTop()) {
+      return $("#whatido-nav").addClass("active");
+    }
+    if ($("#home").offset().top - 56 < $(window).scrollTop()) {
+      $(".active").removeClass("active");
+      return $("#home-nav").addClass("active");
+    }
+  };
   checkPosition();
   $(window).scroll(function () {
     checkPosition();
-  });
-  $("nav li a").click((e) => {
-    $("nav li.active").removeClass("active");
-    $(e.target).closest("li").addClass("active");
+    checkNav();
   });
 });
