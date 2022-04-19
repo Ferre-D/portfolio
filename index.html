@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- nav with items: Home, What I do, projects -->
-    <nav class="container fixed-top bg-white">
+    <nav class="container-fluid px-5 fixed-top bg-white">
       <div><p class="m-0 nav-title">Ferre Donné</p></div>
       <ul>
         <li id="home-nav" class="active">
@@ -32,7 +32,7 @@
           <a href="#whatido">What I do</a>
         </li>
         <li id="projects-nav">
-          <a href="projects.html">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
       </ul>
     </nav>
@@ -161,6 +161,33 @@
           </ul>
         </div>
       </div>
+    </div>
+    <div class="container-fluid projects" id="projects">
+      <div class=" mt-5 row w-75 mx-auto">
+        <div class="col-md-6">      
+          <div class="project-image-wrapper mx-auto">
+          <div class="project-image">
+            <lottie-player
+            id="solar-assistance"
+            src="./assets/sa.json"
+            background="transparent"
+            speed="0.5"
+            loop
+          ></lottie-player>
+        </div>
+          <div class="image-cover d-flex flex-column justify-content-center align-items-center">
+            <h3 class="project-title">SOLAR-ASSISTANCE</h3>
+            <a class="project-button">Visit project</a>
+            <span class="github"><i class="fa-brands fa-github"></i></span>
+          </div>
+        </div></div>
+        <div class="col-md-6">
+          <div class="project-image-wrapper mx-auto">
+            <div class="project-image"><img src="https://via.placeholder.com/150" alt="img"></div>
+            <div class="image-cover"></div>
+          </div></div>
+      </div>
+
     </div>
 
     <script

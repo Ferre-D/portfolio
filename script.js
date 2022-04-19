@@ -7,6 +7,15 @@ $(document).ready(function () {
   let scrolledPast =
     buttonDiv.offset().top + buttonDiv.outerHeight() < $(window).scrollTop();
   $("#floating-content").hide();
+  $(".image-cover").mouseenter((e) => {
+    $(e.target).addClass("show-image-cover")
+    $(e.target).siblings(".project-image").find("lottie-player").get(0).play();
+  })
+  $(".image-cover").mouseleave((e) => {
+    $(e.target).removeClass("show-image-cover")
+    $(e.target).siblings(".project-image").find("lottie-player").get(0).pause();
+
+  })
   let checkPosition = () => {
     if (
       buttonDiv.offset().top + buttonDiv.outerHeight() - 56 <
@@ -27,10 +36,10 @@ $(document).ready(function () {
   };
   let checkNav = () => {
     $(".active").removeClass("active");
-    // if ($("#projects").offset().top - 56 < $(window).scrollTop()) {
-    //   $(".active").removeClass("active");
-    //   return $("#projects-nav").addClass("active");
-    // }
+    if ($("#projects").offset().top - 56 < $(window).scrollTop()) {
+      $(".active").removeClass("active");
+      return $("#projects-nav").addClass("active");
+    }
     if ($("#whatido").offset().top - 56 < $(window).scrollTop()) {
       return $("#whatido-nav").addClass("active");
     }
