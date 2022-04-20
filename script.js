@@ -8,10 +8,11 @@ $(document).ready(function () {
   let scrolledPast =
     buttonDiv.offset().top + buttonDiv.outerHeight() < $(window).scrollTop();
   $("#floating-content").hide();
-  $(".image-cover").mouseenter((e) => {
-    $(e.target).addClass("show-image-cover")
-    $(e.target).siblings(".project-image").find("lottie-player").get(0).play();
+  $("lottie-player").mouseenter((e) => {
+    $(e.target).parent(".project-image").siblings(".image-cover").addClass("show-image-cover")
+    $(e.target).get(0).play();
   })
+
   $(".image-cover").mouseleave((e) => {
     $(e.target).removeClass("show-image-cover")
     $(e.target).siblings(".project-image").find("lottie-player").get(0).pause();
