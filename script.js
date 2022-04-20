@@ -1,6 +1,7 @@
 // check if page is ready jquery
 $(document).ready(function () {
   // check if scrolled past button
+  $('[data-toggle="tooltip"]').tooltip();
   let buttonWrapper = $(".button-wrapper");
   let button = $("#contact-me-button");
   let buttonDiv = $(".home-button");
