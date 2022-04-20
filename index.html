@@ -22,9 +22,9 @@
   </head>
   <body>
     <!-- nav with items: Home, What I do, projects -->
-    <nav class="container-fluid px-5 fixed-top bg-white">
+    <nav class="container-fluid fixed-top bg-white">
       <div><p class="m-0 nav-title">Ferre Donné</p></div>
-      <ul>
+      <ul class="d-none d-md-block">
         <li id="home-nav" class="active">
           <a href="#home">Home</a>
         </li>
@@ -54,9 +54,7 @@
           </div>
         </div>
 
-        <!-- center plz -->
-
-        <div class="col-md-6 illustration">
+        <div class="col-md-6 illustration d-none d-md-block">
           <lottie-player
             src="./assets/home animation.json"
             background="transparent"
@@ -81,9 +79,9 @@
     </div>
     <div class="whatido container" id="whatido">
       <div class="text-center">
-        <h3 class="whatido-title">What i do</h3>
+        <h3 class="section-title">What i do</h3>
       </div>
-      <div class="row mx-0 mt-5">
+      <div class="row whatido-row mx-0 mt-5">
         <div class="col-md-4">
           <div class="whatido-icon mx-auto">
             <i class="fa-solid fa-pen-ruler"></i>
@@ -163,6 +161,9 @@
       </div>
     </div>
     <div class="container-fluid projects" id="projects">
+      <div class="text-center">
+        <h3 class="section-title">Projects</h3>
+      </div>
       <div class="mt-5 row  mx-auto px-5">
         <div class="col-md-6">
           <div class="project-image-wrapper mx-auto">
@@ -178,7 +179,8 @@
             <div
               class="image-cover d-flex flex-column justify-content-center align-items-center"
             >
-              <h3 class="project-title">PROJECT 4.0</h3>
+            <i class="text-white close-project-cover fa-solid fa-xmark"></i>
+            <h3 class="project-title">PROJECT 4.0</h3>
               <a href="#!" class="project-button">Visit project</a>
               <a href="#!" class="github disabled" disabled data-toggle="tooltip" data-placement="top" title="Private repository"><i class="fa-brands fa-github"></i></a>
             </div>
@@ -189,15 +191,16 @@
             <div class="project-image">
               <lottie-player
                 id="solar-assistance"
-                src="./assets/sa.json"
+                src="./assets/sa-new.json"
                 background="transparent"
-                speed="0.5"
+                speed="1"
                 loop
               ></lottie-player>
             </div>
             <div
               class="image-cover d-flex flex-column justify-content-center align-items-center"
             >
+            <i class="text-white close-project-cover fa-solid fa-xmark"></i>
               <h3 class="project-title">SOLAR-ASSISTANCE</h3>
               <a href="#!" class="project-button">Visit project</a>
               <a href="#!" class="github" data-toggle="tooltip" data-placement="top" title="Private repository"><i class="fa-brands fa-github disabled"></i></a>

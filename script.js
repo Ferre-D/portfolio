@@ -8,16 +8,14 @@ $(document).ready(function () {
   let scrolledPast =
     buttonDiv.offset().top + buttonDiv.outerHeight() < $(window).scrollTop();
   $("#floating-content").hide();
-  $("lottie-player").mouseenter((e) => {
-    $(e.target).parent(".project-image").siblings(".image-cover").addClass("show-image-cover")
-    $(e.target).get(0).play();
-  })
 
-  $(".image-cover").mouseleave((e) => {
-    $(e.target).removeClass("show-image-cover")
-    $(e.target).siblings(".project-image").find("lottie-player").get(0).pause();
 
-  })
+
+  let hideImageCover = (cover) => {
+      $(cover).removeClass("show-image-cover")
+      $(cover).addClass("hide-image-cover")
+      $(cover).siblings(".project-image").find("lottie-player").get(0).pause();
+    }
   let checkPosition = () => {
     if (
       buttonDiv.offset().top + buttonDiv.outerHeight() - 56 <
@@ -36,6 +34,13 @@ $(document).ready(function () {
       $("#not-floating-content").show();
     }
   };
+  $(".contact-me-button").click((e) => {
+    alert("The site is currently under construction... \n You can always reach me on donne.ferre@gmail.com or shoot me a message on linkedin/ferre-donne")
+  })
+  $(".close-project-cover").click((e) => {
+    let cover = $(e.target).parent(".image-cover")
+    hideImageCover(cover);
+  })
   let checkNav = () => {
     $(".active").removeClass("active");
     if ($("#projects").offset().top - 56 < $(window).scrollTop()) {
@@ -51,6 +56,11 @@ $(document).ready(function () {
     }
   };
   checkPosition();
+  $("lottie-player").click((e) => {
+    $(e.target).parent(".project-image").siblings(".image-cover").removeClass("hide-image-cover")
+    $(e.target).parent(".project-image").siblings(".image-cover").addClass("show-image-cover")
+    $(e.target).get(0).play();
+  })
   $(window).scroll(function () {
     checkPosition();
     checkNav();
