@@ -7,7 +7,6 @@
 *::after {
   box-sizing: border-box;
   --primary-color: #eaab19;
-  /* #margin and padding 0; */
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -98,7 +97,7 @@ nav a:hover {
 
   height: 400px;
 }
-.whatido-row .whatido-icon{
+.whatido-row .whatido-icon {
   margin-top: 0 !important;
 }
 .project-title {
@@ -130,12 +129,12 @@ nav a:hover {
   text-decoration: none;
   color: white;
 }
-.close-project-cover{
- position: absolute;
- top: 15px;
- font-size: 1.3em;
- cursor: pointer;
- right: 15px; 
+.close-project-cover {
+  position: absolute;
+  top: 15px;
+  font-size: 1.3em;
+  cursor: pointer;
+  right: 15px;
 }
 .disabled {
   color: #ddd !important;
@@ -164,9 +163,8 @@ nav a:hover {
 .show-image-cover {
   animation: show-image-cover 1s forwards ease-in-out;
 }
-.hide-image-cover{
+.hide-image-cover {
   animation: hide-image-cover 1s forwards ease-in-out;
-
 }
 /* whatido */
 .whatido {
@@ -347,7 +345,6 @@ nav a:hover {
   0% {
     opacity: 1;
     transform: translateY(0px);
-
   }
   80% {
     opacity: 0;
@@ -358,7 +355,6 @@ nav a:hover {
     transform: translateY(100%);
   }
 }
-
 
 /*  animations */
 
@@ -405,27 +401,26 @@ nav a:hover {
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .home-title {
     font-size: 2.5em;
   }
-  .section-title{
+  .section-title {
     font-size: 2.5em;
   }
-  nav{
-  padding: 0 2rem !important;
+  nav {
+    padding: 0 2rem !important;
   }
   .home {
-  min-height: 100vh;
-  padding-top: 13em;
+    min-height: 100vh;
+    padding-top: 13em;
   }
   .home-text {
     width: 480px;
     margin: 4em 0;
     font-size: 20px;
   }
-  .whatido{
+  .whatido {
     margin-top: 0;
   }
 }
