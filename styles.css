@@ -66,6 +66,56 @@ nav a:hover {
   font-weight: bold;
   cursor: pointer;
 }
+.whatido-header {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 400px;
+  padding-top: 4rem;
+}
+.whatido-header h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.whatido-header-content-text {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+}
+.whatido-items {
+  transform: translateY(-100px);
+}
+.whatido-header-content-text p {
+  margin: 0;
+}
+.whatido-header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 45%;
+  margin: 0 auto;
+}
+.whatido .line {
+  margin: 0 2rem;
+  width: 150px;
+  height: 2px;
+  background-color: white;
+}
+.whatido-item {
+  background-color: white;
+  width: 80%;
+  -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 15px 0;
+  margin: 0 auto;
+}
 
 /* projects */
 .projects {
@@ -184,7 +234,7 @@ nav a:hover {
 
 .whatido-icon {
   width: 84px;
-  margin-top: 4rem;
+  margin-top: 1rem;
   height: 84px;
   background-color: var(--primary-color);
   border-radius: 50%;
