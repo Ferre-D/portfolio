@@ -101,15 +101,24 @@ nav a:hover {
   width: 45%;
   margin: 0 auto;
 }
-.whatido .line {
+.line {
   margin: 0 2rem;
   width: 150px;
   height: 2px;
   background-color: white;
 }
+.line-small {
+  margin: 0 1rem;
+  width: 50px;
+  height: 2px;
+  background-color: white;
+}
+.black {
+  background-color: black;
+}
 .whatido-item {
   background-color: white;
-  width: 80%;
+  width: 75%;
   -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
@@ -120,19 +129,77 @@ nav a:hover {
 /* projects */
 .projects {
   padding: 3rem 0;
-  background-color: #f9fbfe;
   margin-top: 3rem;
   min-height: 100vh;
   font-family: "Lato", sans-serif;
 }
+.project-item {
+  width: 60%;
+  height: 300px;
+  background-color: white;
+  -webkit-box-shadow: 5px 14px 28px rgba(134, 151, 168, 0.08);
+  box-shadow: 5px 14px 28px rgba(134, 151, 168, 0.08);
+  border: 1px solid #e0e0e0;
+}
+.project-item:nth-child(odd) {
+  border-radius: 10px 0px 0px 10px;
+  border-right: 0;
+  margin-left: auto;
+}
+.project-item:nth-child(even) {
+  margin-right: auto;
+  border-left: 0;
+  border-radius: 0 10px 10px 0;
+}
+.project-item-text {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+.footer-icons {
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: stretch;
+  margin: 1rem auto;
+  width: 100%;
+}
+.contact-icon i {
+  font-size: 1.4rem;
+  transition: background-color 400ms;
+  color: #fff;
+}
+footer a:hover {
+  text-decoration: none;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 400ms;
+}
+
+.contact-icon:hover {
+  background-color: #fff;
+}
+.contact-icon:hover i {
+  color: var(--primary-color);
+}
 .section-title {
+  font-family: "Montserrat", sans-serif;
   padding-bottom: 1rem;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.8em;
   width: fit-content;
   margin: 0 auto;
-  border-bottom: 2px solid var(--primary-color);
-  font-weight: bold !important;
+  font-weight: bold;
 }
 .project-image-wrapper {
   margin-top: 2.5rem;
@@ -154,6 +221,68 @@ nav a:hover {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: white;
+}
+.project-item-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin: 0;
+  margin-bottom: 0.6rem;
+}
+.read-more {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0;
+  display: block;
+  margin-top: 0.6rem;
+}
+.read-more:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.skill-badge {
+  font-size: 0.8rem;
+  margin: 0.2rem 0.5rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 15px;
+  text-align: center;
+  width: auto;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+.skill-badge:nth-child(1) {
+  margin-left: 0;
+}
+footer {
+  overflow: hidden;
+  margin-bottom: 0;
+  background: var(--primary-color);
+}
+footer .footer-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 3rem;
+  margin-bottom: 0.8rem;
+}
+.footer-title h3 {
+  font-weight: bold;
+}
+.footer-sub-title {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 .project-button {
   border: none;
@@ -359,7 +488,7 @@ nav a:hover {
   background-color: var(--primary-color);
   color: white;
   border-radius: 5px;
-  border: 0;
+  border: 1.5px solid white;
   position: absolute;
   bottom: 96%;
   left: 20px;
@@ -375,7 +504,14 @@ nav a:hover {
   box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.24);
   transition: all ease-in-out 250ms;
 }
-
+.internship-content-text {
+  font-size: 20px;
+  width: 300px;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-family: "Lato", sans-serif;
+  color: black;
+}
 @keyframes show-image-cover {
   0% {
     opacity: 0;
@@ -455,7 +591,7 @@ nav a:hover {
     font-size: 2.5em;
   }
   .section-title {
-    font-size: 2.5em;
+    font-size: 1.8em;
   }
   nav {
     padding: 0 2rem !important;

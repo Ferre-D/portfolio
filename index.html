@@ -91,7 +91,7 @@
           <div class="line"></div>
         </div>
       </div>
-      <div class="row whatido-items">
+      <div class="row whatido-items m-0">
         <div class="col-md-4">
           <div class="whatido-item">
             <div class="whatido-icon mx-auto">
@@ -179,70 +179,109 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid projects" id="projects">
-      <div class="text-center">
-        <h3 class="section-title">Projects</h3>
-      </div>
-      <div class="mt-5 row mx-auto px-5">
-        <div class="col-md-6">
-          <div class="project-image-wrapper mx-auto">
-            <div class="project-image">
-              <lottie-player
-                id="project-40"
-                src="./assets/p4.0.json"
-                background="transparent"
-                speed="1"
-                loop
-              ></lottie-player>
-            </div>
-            <div
-              class="image-cover d-flex flex-column justify-content-center align-items-center"
-            >
-              <i class="text-white close-project-cover fa-solid fa-xmark"></i>
-              <h3 class="project-title">PROJECT 4.0</h3>
-              <a href="#!" class="project-button">More info</a>
-              <a
-                href="#!"
-                class="github disabled"
-                disabled
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Private repository"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="project-image-wrapper mx-auto">
-            <div class="project-image">
-              <lottie-player
-                id="solar-assistance"
-                src="./assets/sa-new.json"
-                background="transparent"
-                speed="1"
-                loop
-              ></lottie-player>
-            </div>
-            <div
-              class="image-cover d-flex flex-column justify-content-center align-items-center"
-            >
-              <i class="text-white close-project-cover fa-solid fa-xmark"></i>
-              <h3 class="project-title">SOLAR-ASSISTANCE</h3>
-              <a href="#!" class="project-button">More info</a>
-              <a
-                href="#!"
-                class="github"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Private repository"
-                ><i class="fa-brands fa-github disabled"></i
-              ></a>
-            </div>
+    <div class="container-fluid internship">
+      <h3 class="section-title">Take a look at my internship</h3>
+      <div class="internship-content">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="internship-content-text px-5"></p>
           </div>
         </div>
       </div>
     </div>
+    <div class="container-fluid projects" id="projects">
+      <div class="text-center">
+        <h3 class="section-title">Here's some of my work!</h3>
+      </div>
+      <div class="mt-5 p-3 row align-items-center project-item">
+        <div class="col-sm-7">
+          <h3 class="project-item-title">Project 4.0</h3>
+          <div class="d-flex badges">
+            <span class="skill-badge">Angular</span>
+            <span class="skill-badge">ChartJS</span>
+            <span class="skill-badge">.NET</span>
+            <span class="skill-badge">Ng Redux</span>
+          </div>
+          <div class="project-item-text mt-4">
+            <p class="m-0">
+              Project 4.0 is a project where every branch of the IT-Factory
+              comes together. The assignment we got was in collaberation with
+              Inetum-Realdolmen. Our job was to create a web application where
+              we could display data from a camera in a adjustable dashboard.
+            </p>
+            <a class="read-more" href=""
+              >Read more
+              <i class="fa-solid fa-right-long"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <img
+            src="assets/dashboard laptop.png"
+            alt="project-4.0"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+      <div class="mt-5 p-3 row align-items-center project-item">
+        <div class="col-sm-5">
+          <img src="assets/blog-it.png" alt="project-4.0" class="img-fluid" />
+        </div>
+        <div class="col-sm-7">
+          <h3 class="project-item-title">Blog-It</h3>
+          <div class="d-flex badges">
+            <span class="skill-badge">Next.js</span>
+            <span class="skill-badge">Firebase</span>
+            <span class="skill-badge">Google Analytics</span>
+          </div>
+          <div class="project-item-text mt-4">
+            <p class="m-0">
+              I decided to create Blog-It when I wanted to learn Next.js.
+              Blog-It is a blogging platform where you can write and read blog
+              articles about IT. I will primarely be using to write about my own
+              projects and technologies that I find interesting.
+            </p>
+            <a class="read-more" href=""
+              >Read more
+              <i class="fa-solid fa-right-long"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 row project-item"></div>
+    </div>
+    <footer>
+      <div class="footer-title">
+        <h3 class="text-center">Ferre Donné</h3>
+      </div>
+      <div class="footer-sub-title">
+        <div class="line"></div>
+        <div><p class="m-0">Conviced? Let's Get In Touch!</p></div>
+        <div class="line"></div>
+      </div>
+      <div class="d-flex footer-icons">
+        <a
+          href="https://github.com/Ferre-D/"
+          target="_blank"
+          class="contact-icon"
+        >
+          <i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://twitter.com/ferredonne"
+          target="_blank"
+          class="contact-icon"
+        >
+          <i class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/ferre-donné/"
+          target="_blank"
+          class="contact-icon"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
