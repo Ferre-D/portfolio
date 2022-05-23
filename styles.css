@@ -72,6 +72,9 @@ nav a:hover {
   height: 400px;
   padding-top: 4rem;
 }
+.txt-primary {
+  color: var(--primary-color) !important;
+}
 .whatido-header h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
