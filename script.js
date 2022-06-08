@@ -6,7 +6,10 @@ $(document).ready(function () {
   let scrolledPast =
     buttonDiv.offset().top + buttonDiv.outerHeight() < $(window).scrollTop();
   $("#floating-content").hide();
-
+  let hideContactModal = () => {
+    $("body").removeClass("overflow-hidden");
+    $(".contact-me-modal").attr("data-show", false);
+  };
   let checkPosition = () => {
     if (
       buttonDiv.offset().top + buttonDiv.outerHeight() - 56 <
@@ -25,10 +28,26 @@ $(document).ready(function () {
       $("#not-floating-content").show();
     }
   };
+  //on escape
+  $(document).keyup(function (e) {
+    if (e.keyCode == 27 && $(".contact-me-modal").attr("data-show") == "true") {
+      hideContactModal();
+    }
+  });
+  $("#close-modal").click(hideContactModal);
+  $(".contact-me-modal").click((e) => {
+    if (
+      e.target.id === "contact-me-modal-backdrop" ||
+      e.target.id === "close-modal"
+    ) {
+      hideContactModal();
+    }
+  });
+
   $(".contact-me-button").click((e) => {
-    alert(
-      "The site is currently under construction... \n You can always reach me on donne.ferre@gmail.com or shoot me a message on linkedin/ferre-donne"
-    );
+    e.preventDefault();
+    $("body").addClass("overflow-hidden");
+    $(".contact-me-modal").attr("data-show", true);
   });
   let checkNav = () => {
     $(".active").removeClass("active");

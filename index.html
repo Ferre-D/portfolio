@@ -58,7 +58,7 @@
               href="/assets/Resume - Ferre Donné.pdf"
               download
               class="txt-primary"
-              >Downlaod my resume!</a
+              >Download my resume!</a
             >
           </div>
         </div>
@@ -285,15 +285,20 @@
               defense. It's a good way to make sure that obvious errors, like
               typos, are fixed before they are merged into the master branch.
             </p>
-            <p>
+            <p class="m-0">
               <a href="assets/Plan Van Aanplak - Ferre Donné.pdf" download>
                 <i class="fa-solid fa-file-pdf"></i> Plan van aanpak</a
               >
             </p>
-            <p>
+            <p class="m-0">
               <a href="assets/Reflectieverslag Ferre Donné.pdf" download>
                 <i class="fa-solid fa-file-pdf"></i> Reflectie verslag</a
               >
+            </p>
+            <p class="m-0">
+              <a href="assets/Stage verslag Ferre Donné.pdf" download>
+                <i class="fa-solid fa-file-pdf"></i> Stage verslag
+              </a>
             </p>
           </div>
         </div>
@@ -315,9 +320,10 @@
           <div class="project-item-text mt-4">
             <p class="m-0">
               Project 4.0 is a project where every branch of the IT-Factory
-              comes together. The assignment we got was in collaberation with
+              comes together. The assignment we got was in collaboration with
               Inetum-Realdolmen. Our job was to create a web application where
-              we could display data from a camera in a adjustable dashboard.
+              we could display data from a camera with an AI model that
+              recognizes vehicles in an adjustable dashboard.
             </p>
             <a
               class="read-more"
@@ -351,7 +357,7 @@
             <p class="m-0">
               I decided to create Blog-It when I wanted to learn Next.js.
               Blog-It is a blogging platform where you can write and read blog
-              articles about IT. I will primarely be using to write about my own
+              articles about IT. I will primarily be using to write about my own
               projects and technologies that I find interesting.
             </p>
             <a
@@ -433,7 +439,45 @@
         ></a>
       </div>
     </footer>
-
+    <div
+      class="contact-me-modal"
+      id="contact-me-modal-backdrop"
+      data-show="false"
+    >
+      <div class="contact-me-modal-content">
+        <div class="close-modal" id="close-modal"><span>&times;</span></div>
+        <div class="contact-me-box d-sm-none d-md-block"></div>
+        <div class="contact-me-form">
+          <h3>Let's Grab Some Coffee</h3>
+          <p>
+            If you’ve got an interesting opportunity or you just want to shoot
+            me a message, go right ahead, open for anything!
+          </p>
+          <form action="https://formspree.io/f/myyooazr" method="POST">
+            <div class="contact-me-form-group">
+              <label for="name" id="label-name">Name</label>
+              <input type="text" name="name" required id="name" />
+            </div>
+            <div class="contact-me-form-group">
+              <label for="email" id="label-email">Email</label>
+              <input type="email" required id="email" name="email" />
+            </div>
+            <div class="contact-me-form-group">
+              <label for="message" id="label-message">Message</label>
+              <textarea
+                type="text"
+                rows="3"
+                id="message"
+                name="message"
+              ></textarea>
+            </div>
+            <button class="btn-contact-form" type="submit">
+              Send <i class="fa-solid fa-mug-hot"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
